@@ -9,7 +9,18 @@ import SwiftUI
 
 struct GradientBootcamp: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        RoundedRectangle(cornerRadius: 25.0)
+            .fill(
+//                LinearGradient(
+//                    gradient: Gradient(colors: [Color.red, Color.blue, Color.green]),
+//                    startPoint: .topLeading,
+//                    endPoint: .bottomTrailing)
+                
+                RadialGradient(gradient: Gradient(colors: [Color.red, Color.blue]), center: .center, startRadius: 5, endRadius: 200)
+                
+                
+            )
+            .frame(width: 300, height: 200)
     }
 }
 
